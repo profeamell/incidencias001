@@ -1,0 +1,7 @@
+{
+  "name": "Incidencias INSELPA",
+  "description": "Sistema de registro y control de incidencias escolares para la Institución Educativa la Pascuala.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
