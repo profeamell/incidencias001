@@ -10,60 +10,32 @@
       tailwind.config = {
         theme: {
           extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-            },
-            colors: {
-              primary: '#1e40af', // Blue 800
-              secondary: '#1e293b', // Slate 800
-            }
+            fontFamily: { sans: ['Inter', 'sans-serif'] },
+            colors: { primary: '#1e40af', secondary: '#1e293b' }
           }
         }
       }
     </script>
-    <style>
-      body {
-        background-color: #f3f4f6;
-      }
-      /* Custom scrollbar */
-      ::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1; 
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #c1c1c1; 
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #a8a8a8; 
-      }
-    </style>
   <script type="importmap">
 {
   "imports": {
+    "firebase/": "https://aistudiocdn.com/firebase@^12.6.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
     "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
     "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
-    "react-dom/client": "https://aistudiocdn.com/react-dom@^19.2.0/client",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
     "jspdf": "https://aistudiocdn.com/jspdf@^3.0.4",
     "jspdf-autotable": "https://aistudiocdn.com/jspdf-autotable@^5.0.2",
-    "read-excel-file": "https://cdn.jsdelivr.net/npm/read-excel-file@5.7.1/+esm",
-    "firebase/app": "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js",
-    "firebase/firestore": "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js",
-    "firebase/": "https://aistudiocdn.com/firebase@^12.6.0/"
+    "read-excel-file": "https://aistudiocdn.com/read-excel-file@^6.0.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "vite": "https://aistudiocdn.com/vite@^7.2.6",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
-  <body>
+  <body class="bg-gray-50">
     <div id="root"></div>
-    <script type="module" src="/src/index.tsx"></script>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
